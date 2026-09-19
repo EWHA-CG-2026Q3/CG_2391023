@@ -11,7 +11,7 @@ public class PolygonMesh : MonoBehaviour
         Vector3[] vertices = new Vector3[]
         {
             new Vector3(0f, 2f, 0f),   // 0
-            new Vector3(1.5f, 0.5f, 0f), // 1
+            new Vector3(2.5f, 0.8f, 0f), // 1
             new Vector3(1f, -1f, 0f),    // 2
             new Vector3(-1f, -1f, 0f),   // 3
             new Vector3(-1.5f, 0.5f, 0f) // 4
