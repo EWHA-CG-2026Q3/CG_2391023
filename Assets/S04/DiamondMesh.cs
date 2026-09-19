@@ -14,8 +14,8 @@ public class DiamondMesh : MonoBehaviour
             new Vector3(0f, 0f, 1f), // 3
 
             // 위/아래 꼭짓점
-            new Vector3(0.5f, 1f, 0.5f),  // 4
-            new Vector3(0.5f, -1f, 0.5f)  // 5
+            new Vector3(0.5f, 1.5f, 0.5f),  // 4
+            new Vector3(0.5f, -1.5f, 0.5f)  // 5
         };
         // 다이아몬드의 삼각형 8개
         int[] triangles = new int[]
