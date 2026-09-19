@@ -10,7 +10,7 @@ public class PolygonMesh : MonoBehaviour
         // 정점 5개로 오각형 만들기
         Vector3[] vertices = new Vector3[]
         {
-            new Vector3(0f, 1.5f, 0f),   // 0
+            new Vector3(0f, 2f, 0f),   // 0
             new Vector3(1.5f, 0.5f, 0f), // 1
             new Vector3(1f, -1f, 0f),    // 2
             new Vector3(-1f, -1f, 0f),   // 3
