@@ -26,7 +26,7 @@ public class S05_MyMeshRenderer : MonoBehaviour
         canvasTexture.filterMode = FilterMode.Point;
 
         // 3. 픽셀 채우기
-        FillVerticalStripes(patternSize, colorA, colorB);
+        FillCheckerboard(patternSize, colorA, colorB);
 
         // 4. SetPixel 변경 사항을 실제 텍스처에 반영
         canvasTexture.Apply();
@@ -56,6 +56,20 @@ public class S05_MyMeshRenderer : MonoBehaviour
 
             for (int y = 0; y < canvasHeight; y++)
                 canvasTexture.SetPixel(x, y, stripeColor);
+        }
+    }
+    private void FillCheckerboard(int size, Color colorA, Color colorB)
+    {
+        for (int x = 0; x < canvasWidth; x++)
+        {
+            for (int y = 0; y < canvasHeight; y++)
+            {
+                bool isColorA = ((x / size) + (y / size)) % 2 == 0;
+
+                Color checkerColor = isColorA ? colorA : colorB;
+
+                canvasTexture.SetPixel(x, y, checkerColor);
+            }
         }
     }
 }
